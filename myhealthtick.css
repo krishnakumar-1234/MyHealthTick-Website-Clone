@@ -1,0 +1,1304 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+;
+
+body {
+    color: black;
+    background-color: white;
+}
+
+#LandingPage {
+    width: 100%;
+    height: 100vh;
+    /* height: 712px; */
+    z-index: 2;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.715), rgba(255, 255, 255, 0));
+
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.logo {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    ;
+    justify-content: center;
+}
+
+.logo img {
+    width: 210px;
+}
+
+.downloadingButtons {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.appleDownloadBtn {
+    margin-left: 35px;
+}
+
+.downloadingButtons img {
+    width: 140px;
+
+}
+
+#GetApp {
+    display: none;
+}
+
+.contentHeadingPage {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+
+}
+
+.innerContentHeadingPage {
+    width: 90%;
+    color: white;
+    height: fit-content;
+
+}
+
+.innerContentHeadingPage h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.innerContentHeadingPage p {
+    font-size: 26px;
+    line-height: 38px;
+    font-family: sans-serif;
+}
+
+.lineThrough {
+    font-size: 60px;
+    color: rgb(198, 198, 198);
+    text-decoration: line-through;
+}
+
+#BookConsulation {
+    width: 380px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition-duration: 0.50s;
+    background-color: #fff;
+    box-shadow: 0px 5px 0 0 #aaaaaa;
+    ;
+    font-size: 1.50em;
+}
+
+#BookConsulation:hover {
+    box-shadow: none;
+}
+
+.landingpage {
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+}
+
+.landingpage video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+
+}
+
+.PhoneVeiw {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .PhoneVeiw {
+        display: block;
+    }
+
+    .BigScreen {
+        height: 720px;
+        display: none;
+        object-fit: cover;
+    }
+
+    #header {
+
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.715), rgba(255, 255, 255, 0));
+
+    }
+
+
+}
+
+@media (max-width: 870px) {
+    .logo {
+        width: 50%;
+
+
+    }
+    .downloadingButtons {
+        width: 50%;
+
+
+    }
+    .downloadingButtons img {
+        display: none;
+    }
+    #GetApp {
+        display: flex;
+        width: 120px;
+        height: 38px;
+        padding: 7px;
+        border: none;
+        border: 2px solid white;
+        display: flex;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        border-radius: 8px;
+        justify-content: center;
+        font-size: 16px;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .innerContentHeadingPage h1 {
+        font-size: 2em;
+    }
+
+    .innerContentHeadingPage p {
+        font-size: 19px;
+        color: #aaaaaa;
+    }
+
+    .lineThrough {
+        font-size: 20px;
+    }
+
+    
+    .contentHeadingPage {
+        margin-top: 100px;
+        padding-bottom: 92px;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.584), rgba(255, 255, 255, 0));
+    }
+
+    #BookConsulation {
+        width: 90%;
+    }
+    #LandingPage {
+        background-image: none;
+    }
+}
+
+
+#userRatingPoint {
+    width: 100%;
+    margin-bottom: 100px;
+    height: fit-content;
+}
+
+.headingRating {
+    width: 100%;
+    height: 50px;
+    font-size: 3em;
+    margin-bottom: 100px;
+    text-align: center;
+    margin-top: 200px;
+    font-family: sans-serif;
+}
+
+.userRateContainer {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+
+}
+
+.userInnerRateContainer {
+    width: 90%;
+    /* animation-name: animationUserRate; */
+    animation-duration: 1.50s;
+    animation-iteration-count: calc(1);
+    display: flex;
+
+}
+
+@keyframes animationUserRate {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.contentForUser {
+    width: 50%;
+}
+
+.nameUser {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    color: rgb(85, 85, 85);
+    font-size: 2.30em;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.lostWeightVSGaind {
+    display: flex;
+    font-size: 1.20em;
+    color: rgb(85, 85, 85);
+    justify-content: space-evenly;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lost {
+    width: 50%;
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+.gained {
+    width: 50%;
+    text-align: center;
+
+}
+
+.h1a {
+    font-size: 1.50em;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.moroContentForUseFeedBack {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: fit-content;
+
+
+}
+
+.moroContentForUseFeedBack p {
+    font-weight: 500;
+    color: rgb(85, 85, 85);
+    font-size: 1.17188rem;
+    line-height: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.UserFeddBackChanger {
+    width: 100%;
+
+}
+
+.nextAndBackUserButton {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+#Back {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+#Next {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    justify-content: center;
+    border-radius: 100px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+#Next:hover {
+    background-color: rgba(0, 255, 255, 0.313);
+    border: 1px solid rgba(0, 255, 255, 0.313);
+
+}
+
+#Back:hover {
+    background-color: rgba(0, 255, 255, 0.313);
+    border: 1px solid rgba(0, 255, 255, 0.313);
+
+}
+
+.ImageForUser {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#UserOfImage {
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10000px;
+    background-image: url(images/userOne.webp);
+
+}
+
+.locationNumber {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.locationNumber button {
+    width: 15px;
+    height: 15px;
+    border: none;
+    margin-left: 15px;
+    border-radius: 100%;
+    background-color: #aaaaaa;
+}
+
+#noneafter {
+    display: flex;
+}
+
+#berfornone {
+    display: none;
+}
+
+@media (max-width: 1190px) {
+    #noneafter {
+        display: none;
+    }
+
+    #berfornone {
+        display: flex;
+    }
+
+    .userRateContainer {
+        width: 95%;
+    }
+
+    .userInnerRateContainer {
+        flex-direction: column;
+    }
+
+    .contentForUser {
+        width: 100%;
+    }
+
+    .ImageForUser {
+        width: 100%;
+        margin-bottom: 20px
+    }
+
+    #UserOfImage {
+        width: 300px;
+        height: 300px;
+    }
+
+    .nextAndBackUserButton {
+        height: fit-content;
+        /* background-color: red; */
+    }
+
+    .nextAndBackUserButton button {
+        margin-left: 10px;
+        margin-top: -15px;
+    }
+
+    .headingRating {
+        font-size: 2.20em;
+    }
+}
+
+#programworks {
+    width: 100%;
+    height: fit-content;
+}
+
+.headingForHowProgramWorks {
+    width: 100%;
+    font-size: 48px;
+    text-align: center;
+    color: #1e97ca;
+    height: fit-content;
+    margin-top: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ProgramsForContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+.ProgramsForInnerContainer {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+
+}
+
+.ProgramContainerOne {
+    width: fit-content;
+    margin: 40px;
+    /* background-color: #1e97ca; */
+
+}
+
+.ProgramContainerOne h2 {
+    font-size: 1.60em;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ProgramContainerOne p {
+    font-size: 17px;
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ImageForProgram {
+    width: 195px;
+    height: 195px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.bottomProgramForTheImageAndContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+.innerProgramForTheImageAndContentBottom {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    justify-content: center;
+}
+
+.downloadeContainerForTheApp {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.downloadeContainerForTheApp button {
+    width: 230px;
+    height: 50px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition-duration: 0.30s;
+    border-radius: 1000px;
+    border: 2px solid #1e96ca6b;
+
+}
+
+.downloadeContainerForTheApp button:hover {
+    border-color: #1e97ca;
+    transform: scale(1.01);
+}
+
+@media (max-width: 890px) {
+    .ProgramsForInnerContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .ProgramContainerOne {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ProgramContainerOne h2 {
+        text-align: start;
+    }
+
+    .innerProgramForTheImageAndContentBottom {
+        flex-direction: column;
+    }
+
+    .headingForHowProgramWorks {
+        font-size: 2em;
+        margin-bottom: -100px;
+    }
+
+}
+
+#weightLossCourse {
+    width: 100%;
+    display: flex;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding-bottom: 200px;
+    background: linear-gradient(359deg, rgb(169, 181, 248) 0%, rgb(218, 223, 252) 57%, rgb(255, 255, 255) 100%) 0% 0% no-repeat padding-box padding-box transparent;
+}
+
+.innerWeightLossCourse {
+    width: 90%;
+    display: flex;
+}
+
+.weightLossForContentContainer {
+    width: 50%;
+}
+
+.weightLossForContentContainer p {
+    color: #555555;
+    line-height: 26px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#headingForWeightCourse {
+    font-size: 2.60em;
+    width: 100%;
+    margin-bottom: 50px;
+    color: rgb(85, 85, 85);
+}
+
+.borderLineForTheContent {
+    width: fit-content;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    margin-top: 12px;
+    line-height: 20px;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+
+}
+
+.borderLineForTheContent svg {
+    padding-right: 5px;
+    font-size: 1.50em;
+}
+
+.weightLossForImage {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 1097px) {
+    .innerWeightLossCourse {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .weightLossForContentContainer {
+        width: 100%;
+    }
+
+    .weightLossForImage {
+        width: 100%;
+    }
+
+    .weightLossForImage img {
+        width: 60%;
+    }
+
+    .weightLossForContentContainer p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 500px) {
+    #headingForWeightCourse {
+        font-size: 2em;
+        font-weight: lighter;
+
+    }
+
+    .weightLossForImage img {
+        width: 100%;
+    }
+}
+
+#LoseweightinSMART {
+    width: 100%;
+    height: 820px;
+    background-color: #181723;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: left;
+    background-image: url(images/smartWeightLoss.webp);
+    justify-content: center;
+    color: white;
+}
+
+.innerLossSmart {
+    width: 80%;
+    height: fit-content;
+}
+
+.innerLossSmart h2 {
+    font-size: 2.50em;
+    margin-bottom: 80px;
+    line-height: 53px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.innerLossSmart p {
+    line-height: 40px;
+    font-size: 1.50em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Understandthescienceofweightlossandoverallhealth {
+    width: 100%;
+    margin-top: 100px;
+    height: fit-content;
+}
+
+#DownloadeAppThirdIn {
+    width: 222px;
+    height: 40px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 1000px;
+    margin-top: 80px;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 500px) {
+    .innerLossSmart {
+        width: 93%;
+    }
+
+    .innerLossSmart h2 {
+        margin-bottom: 40px;
+    }
+    #LoseweightinSMART {
+
+        background-position: center;
+    }
+}
+
+.HeadingForUnderstandingWeightLoss {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 2em;
+    color: #555555;
+    text-align: center;
+    height: fit-content;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.HeadingForUnderstandingWeightLoss h1 {
+    font-weight: lighter;
+}
+
+.sleepEatingPsychologyOfThreeElementsContainer {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.innersleepEatingPsychologyOfThreeElementsContainer {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sleep {
+    width: fit-content;
+}
+
+.sleep a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    font-size: 1.30em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sleep a img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10000px;
+}
+
+.sleep a h2 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.eatingHabit {
+    width: fit-content;
+
+}
+
+.eatingHabit a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    font-size: 1.30em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.eatingHabit a img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10000px;
+}
+
+.eatingHabit a h2 {
+    margin-top: 15px;
+}
+
+.PsychologyWeight {
+    width: fit-content;
+
+}
+
+.PsychologyWeight a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    font-size: 1.30em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.PsychologyWeight a img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10000px;
+}
+
+.PsychologyWeight a h2 {
+    margin-top: 15px;
+    font-weight: lighter;
+}
+
+@media (max-width: 830px) {
+    .innersleepEatingPsychologyOfThreeElementsContainer {
+        flex-direction: column;
+
+    }
+
+    .sleep {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .PsychologyWeight {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .eatingHabit {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .HeadingForUnderstandingWeightLoss {
+        font-size: 1.20em;
+
+    }
+}
+
+#Featuredinmajornewsmedia {
+    width: 100%;
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.headingForFeatured {
+    width: 90%;
+    font-size: 2em;
+    height: 100px;
+    text-align: center;
+    color: #555555;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headingForFeatured h2 {
+    font-weight: lighter;
+}
+
+.WhichNewsContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.innerWhichNewsContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 2s;
+    animation-iteration-count: calc(1);
+}
+
+.innerWhichNewsContainer img {
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.innerWhichNewsContainer p {
+    width: 37%;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+@media (max-width: 1054px) {
+    .innerWhichNewsContainer p {
+        width: 100%;
+        font-size: 1.30rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .headingForFeatured {
+        font-size: 1.50em;
+    }
+}
+
+#footer {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #181723;
+}
+
+.innerFooter {
+    width: 90%;
+    display: flex;
+    height: fit-content;
+}
+
+
+.socelLinks {
+    width: 40%;
+    height: fit-content;
+    padding: 5px;
+    border-right: 2px solid rgb(188, 188, 188);
+}
+
+.logoFooter {
+    width: 100%;
+
+}
+
+.logoFooter img {
+    width: 250px;
+}
+
+.linksFITL {
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.linksFITL p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inFTLI {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.inFTLI a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    padding: 3px;
+    margin: 12px;
+    background-color: #1e97ca;
+
+}
+
+.inFTLI a svg {
+    color: white;
+    font-size: 100%;
+}
+
+.webLinks {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.ImportantLinks {
+    width: 25%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ImportantLinks h2 {
+    width: 100%;
+    font-size: 1.60em;
+    margin-bottom: 10px;
+}
+
+.ImportantLinks a {
+    color: rgb(227, 227, 227);
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 50px;
+    width: fit-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+
+.DownloadApps {
+    width: 25%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.DownloadApps h2 {
+    width: 100%;
+    font-size: 1.60em;
+    margin-bottom: 20px;
+}
+
+.DownloadApps a {
+    color: rgb(227, 227, 227);
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 50px;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.DownloadApps img {
+    width: 150px;
+}
+
+.Others {
+    width: 25%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.Others h2 {
+    width: 100%;
+    font-size: 1.60em;
+    margin-bottom: 10px;
+}
+
+.Others a {
+    color: rgb(227, 227, 227);
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.lastContentForTheFooter {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+.lastContentForTheFooter p {
+    margin-right: 250px;
+    font-size: 14px;
+}
+
+.lastContentForTheFooter p a {
+    margin-left: 20px;
+    color: #dddddd;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+@media (max-width: 1062px) {
+    #footer {
+        height: fit-content;
+    }
+
+    .innerFooter {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .socelLinks {
+        width: 100%;
+        margin-bottom: 30px;
+        border-right: none;
+
+
+    }
+
+    .logoFooter {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .logoFooter img {
+        width: 300px;
+    }
+
+    .webLinks {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    .ImportantLinks {
+        width: 200px;
+        margin-top: 30px;
+        /* background-color: #aaaaaa; */
+    }
+
+    .DownloadApps {
+        width: 200px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+
+
+    }
+
+    .Others {
+        width: 200px;
+        margin-top: 30px;
+        /* background-color: #aaaaaa; */
+
+    }
+
+
+    .lastContentForTheFooter {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .lastContentForTheFooter p {
+        width: 90%;
+        margin: 0;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .lastContentForTheFooter p a {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .linksFITL {
+        height: fit-content;
+    }
+
+    .webLinks {
+        justify-content: start;
+    }
+
+    .ImportantLinks {
+        width: 50%;
+        margin-top: 30px;
+
+    }
+
+    .ImportantLinks h2 {
+        font-size: 1.40em;
+
+    }
+
+    .DownloadApps {
+        width: 50%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+
+
+    }
+
+    .DownloadApps h2 {
+        font-size: 1.40em;
+    }
+
+    .Others {
+        width: 160px;
+        margin-top: 30px;
+        /* background-color: #aaaaaa; */
+
+    }
+
+}
+
+/* #uxuiFor {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+
+}
+#uxuiFor button{
+    width: 40%;
+    font-weight: bold;
+} */
