@@ -16,7 +16,7 @@ MyHealthTick Website Clone aims to replicate the essence of Health Tick, helping
 
 To explore MyHealthTick Website Clone:
 
-1. Visit [MyHealthTickClone.com](https://www.myhealthtickclone.com) to view the website.
+1. Visit [MyHealthTickClone.com](https://www.myhealthtick.com/) to view the website.
 2. Navigate through the pages to learn about the features and approach inspired by Health Tick.
 3. This repository serves as a demonstration of design and functionality, without direct affiliation with Health Tick.
 
